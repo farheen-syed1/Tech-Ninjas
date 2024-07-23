@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Ninjas - Homepage</title>
+    <link rel="stylesheet" href="./styles/landing.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script type="module" src="./scripts/index.js" defer></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__logo">
+          <a href="/landing.html">
+            <img
+              src="./assets/svg/code-logo.svg"
+              alt="Javascript Ninjas Logo"
+              class="header__nav--image"
+            />
+          </a>
+          <a href="#">Tech Ninjas</a>
+        </div>
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link" href="./landing.html">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./pages/about-us.html">About Us</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./pages/contact.html">Contact Us</a>
+          </li>
+          <!-- <li class="navbar__item">
+            <a class="navbar__link" href="./pages/contact.html">SignIn</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./pages/contact.html">Register</a> -->
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Creating the next generation of software engineers.
+          </h1>
+          <p class="hero__subtitle">
+            Coding the Future, One Engineer at a Time
+          </p>
+        </div>
+        <div class="hero__image-container">
+          <img
+            class="hero__image"
+            src="./assets/21196359.jpg"
+            alt="Student Studying Computer Science"
+          />
+        </div>
+      </div>
+
+      <div class="hero__form">
+        <form class="hero__form--action">
+          <!-- Question Count Form -->
+          <label for="questionCount" class="hero__form--label"
+            >Question Count:
+          </label>
+          <input
+            id="questionCount"
+            name="questionCount"
+            class="hero__form--input"
+            type="number"
+            min="10"
+            max="19"
+            value="10"
+          />
+
+          <!-- Question Type Form -->
+          <label for="questionType" class="hero__form--label"
+            >Question Type:
+          </label>
+          <select
+            id="questionType"
+            name="questionType"
+            class="hero__form--select"
+          >
+            <option value="all">Any Type</option>
+            <option value="multiple">Multiple Choice</option>
+            <option value="boolean">True or False</option>
+          </select>
+
+          <!-- Question Difficulty Form -->
+          <label id="difficulty" class="hero__form--label">Difficulty</label>
+          <select id="difficulty" name="difficulty" class="hero__form--select">
+            <option value="all">Any Difficulty</option>
+            <option value="easy">Beginner</option>
+            <option value="medium">Expert</option>
+          </select>
+
+          <!-- Question Submit Form -->
+          <button type="submit" class="hero__form--button">START</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <!-- <a class="footer__logo" href="index.html"><img class="header__logo"   src="./assets/svg/code-logo.svg" alt ="logo"></a>
+      -->
+      <p>Copyright &copy; Lonz and Farheen 2024 Hackathon</p>
+      <p></p>
+    </footer>
+  </body>
+</html>

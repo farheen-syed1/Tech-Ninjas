@@ -1,0 +1,33 @@
+<form class="hero__form--action">
+  <div class="card">
+    <!-- Question Count Form -->
+    <label for="questionCount" class="hero__form--label">Question Count:</label>
+    <input id="questionCount" name="questionCount" class="hero__form--input" type="number" min="10" max="20" value="10">
+  </div>
+
+  <div class="card">
+    <!-- Question Type Form -->
+    <label for="questionType" class="hero__form--label">Question Type:</label>
+    <select id="questionType" name="questionType" class="hero__form--select">
+      <option value="all">Any Type</option>
+      <option value="multiple">Multiple Choice</option>
+      <option value="boolean">True or False</option>
+    </select>
+  </div>
+
+  <div class="card">
+    <!-- Question Difficulty Form -->
+    <label for="difficulty" class="hero__form--label">Difficulty:</label>
+    <select id="difficulty" name="difficulty" class="hero__form--select">
+      <option value="all">Any Difficulty</option>
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+  </div>
+
+  <div class="card">
+    <!-- Question Submit Form -->
+    <button type="submit" class="hero__form--button">START</button>
+  </div>
+</form>

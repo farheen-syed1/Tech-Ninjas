@@ -1,0 +1,110 @@
+@use "./partials/global" as *;
+@use "./partials/colors" as *;
+
+.hero {
+  &__form {
+    width: 50%;
+
+    &--action {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    &--label {
+      font-size: 2rem;
+      color: #333;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    &--input {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.25rem;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    &--select {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.25rem;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    &--button {
+      padding: 1rem;
+      border: none;
+      background-color: #db7a4e;
+      border-radius: 20px;
+      color: white;
+      font-size: 1.5rem;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+}
+
+.hero {
+  background-image: url(../assets/pexels-artempodrez-7233099.jpg);
+  background-color: #fefaf5;
+  padding: 100px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  &__container {
+    // width: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    // width: 100%;
+    width: 60%;
+    padding-top: 50px;
+
+    h1 {
+      color: #ecf2f7;
+      font-size: 58px;
+      font-weight: 600;
+    }
+
+    p {
+      color: #eaedef;
+      padding-top: 30px;
+      font-size: 28px;
+    }
+
+    button {
+      background-color: #db7a4e;
+      color: white;
+      border: none;
+      padding: 10px 47px;
+      cursor: pointer;
+      margin-top: 20px;
+      border-radius: 20px;
+
+      &__link {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+
+  &__image-container {
+    width: 50%;
+
+    img {
+      max-width: 75%;
+      height: auto;
+    }
+  }
+}
